@@ -28,7 +28,7 @@ DISPLAY_W, DISPLAY_H = 1280, 720
 
 with create_landmarker() as landmarker:
     # Use WINDOW_NORMAL to allow the window to fill the screen space
-    cv2.namedWindow("Virtual Control (Privacy Mode)", cv2.WINDOW_NORMAL)
+    cv2.namedWindow("Virtual Mouse Control", cv2.WINDOW_NORMAL)
     
     while cap.isOpened():
         ret, frame = cap.read()
@@ -90,7 +90,7 @@ with create_landmarker() as landmarker:
        
         resized_view = cv2.resize(display_screen, (DISPLAY_W, DISPLAY_H), interpolation=cv2.INTER_LINEAR)
         
-        cv2.imshow("Virtual MouseControl", resized_view)
+        cv2.imshow("Virtual Mouse Control", resized_view)
         
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
