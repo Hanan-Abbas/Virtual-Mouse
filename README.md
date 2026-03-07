@@ -204,7 +204,7 @@ PyAutoGUI failsafe is enabled — move cursor to top-left corner to stop control
 ## 👨‍💻 Author
 
 Hanan Abbas  
-Data Scuentist and ML Enthusiast  
+Data Scientist and ML Enthusiast  
 
 ---
 
