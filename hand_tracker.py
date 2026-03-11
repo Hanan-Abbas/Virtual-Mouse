@@ -4,10 +4,10 @@ import time
 
 BaseOptions = mp.tasks.BaseOptions
 HandLandmarker = mp.tasks.vision.HandLandmarker
-HandLandmarkerOptions = mp.tasks.vision.HandLandmarkerOptions
+HandLandmarkerOptions = mp.tasks.vision.HandLandmarkerOptions 
 VisionRunningMode = mp.tasks.vision.RunningMode
 
-
+ 
 def create_landmarker(model_path="models/hand_landmarker.task"):
     options = HandLandmarkerOptions(
         base_options=BaseOptions(model_asset_path=model_path),
