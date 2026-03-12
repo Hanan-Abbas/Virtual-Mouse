@@ -7,7 +7,6 @@ plocX, plocY = 0, 0
 last_left_click = 0
 last_right_click = 0 
 
-
 def move_cursor(index_tip, frame_width, frame_height):
     global plocX, plocY
 
@@ -24,7 +23,7 @@ def move_cursor(index_tip, frame_width, frame_height):
 
     targetX = np.clip(targetX, 0, SCREEN_WIDTH - 1)
     targetY = np.clip(targetY, 0, SCREEN_HEIGHT - 1)
-
+ 
     currX = plocX + (targetX - plocX) * SMOOTHING_FACTOR
     currY = plocY + (targetY - plocY) * SMOOTHING_FACTOR
 
